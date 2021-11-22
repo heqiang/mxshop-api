@@ -1,0 +1,39 @@
+port : 8081
+#jwt_expire: 2
+userserver:
+  host: "192.168.31.101"
+  port: 8081
+serverinfo:
+  name: "hq"
+  user_srv: "mxshop"
+
+log:
+  level: "debug"
+  filename: "web_app_log.log"
+  max_size: 200
+  max_age: 30
+  max_backups: 7
+mysql:
+  host: mysql80
+  user: "root"
+  password: 142212
+  port: 3306
+  dbname: "web_app"
+  max_conn: 200
+  max_idle_conns: 10
+redis:
+  host: redis507
+  port: 6379
+  password: ""
+  db: 0
+  poolsize: 100
+  expire: 300
+auth:
+
+sms:
+  accessKeyId: xx
+  accessKeySecret: xx
+consul:
+  host: "127.0.0.1"
+  port: 8500
+  name: "mxshop"

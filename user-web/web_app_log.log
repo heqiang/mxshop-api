@@ -1,0 +1,29 @@
+{"level":"ERROR","time":"2021-11-19T20:12:05.295+0800","caller":"api/user.go:87","msg":"GetUserByMobile error:","error":"rpc error: code = NotFound desc = 不存在该用户"}
+{"level":"ERROR","time":"2021-11-19T20:31:36.474+0800","caller":"api/user.go:107","msg":"参数有误","error":"invalid character 'n' looking for beginning of object key string"}
+{"level":"ERROR","time":"2021-11-19T20:32:20.565+0800","caller":"api/user.go:107","msg":"参数有误","error":"invalid character 'n' looking for beginning of object key string"}
+{"level":"ERROR","time":"2021-11-19T20:32:33.551+0800","caller":"api/user.go:121","msg":"用户创建失败","error":"rpc error: code = AlreadyExists desc = 用户已存在"}
+{"level":"ERROR","time":"2021-11-19T20:33:53.087+0800","caller":"api/user.go:121","msg":"用户创建失败","error":"rpc error: code = AlreadyExists desc = 用户已存在"}
+{"level":"ERROR","time":"2021-11-19T20:34:40.674+0800","caller":"api/user.go:111","msg":"参数有误","error":"Key: 'UserInfo.mobile' Error:Field validation for 'mobile' failed on the 'mobile' tag"}
+{"level":"INFO","time":"2021-11-19T20:50:51.116+0800","caller":"api/user.go:56","msg":"用户列表查询"}
+{"level":"ERROR","time":"2021-11-19T21:21:55.228+0800","caller":"api/user.go:164","msg":"用户更新失败","error":"rpc error: code = NotFound desc = 用户不存在"}
+{"level":"ERROR","time":"2021-11-19T21:42:25.472+0800","caller":"api/user.go:130","msg":"用户创建失败","error":"rpc error: code = AlreadyExists desc = 用户已存在"}
+{"level":"ERROR","time":"2021-11-19T23:03:26.235+0800","caller":"api/user.go:47","msg":"invaild param","error":"invalid character '\"' after object key:value pair"}
+{"level":"ERROR","time":"2021-11-19T23:04:47.646+0800","caller":"api/user.go:47","msg":"invaild param","error":"invalid character '\"' after object key:value pair"}
+{"level":"INFO","time":"2021-11-22T20:42:58.681+0800","caller":"api/user.go:59","msg":"用户列表查询"}
+{"level":"ERROR","time":"2021-11-22T20:43:00.753+0800","caller":"api/user.go:62","msg":"用户列表获取失败：","error":"rpc error: code = Unavailable desc = connection error: desc = \"transport: Error while dialing dial tcp 127.0.0.1:50051: connectex: No connection could be made because the target machine actively refused it.\""}
+{"level":"INFO","time":"2021-11-22T20:43:27.677+0800","caller":"api/user.go:59","msg":"用户列表查询"}
+{"level":"ERROR","time":"2021-11-22T20:43:29.718+0800","caller":"api/user.go:62","msg":"用户列表获取失败：","error":"rpc error: code = Unavailable desc = connection error: desc = \"transport: Error while dialing dial tcp 127.0.0.1:50051: connectex: No connection could be made because the target machine actively refused it.\""}
+{"level":"INFO","time":"2021-11-22T20:47:27.655+0800","caller":"api/user.go:59","msg":"用户列表查询"}
+{"level":"INFO","time":"2021-11-22T20:52:54.629+0800","caller":"api/user.go:86","msg":"用户列表查询"}
+{"level":"ERROR","time":"2021-11-22T20:52:56.672+0800","caller":"api/user.go:89","msg":"用户列表获取失败：","error":"rpc error: code = Unavailable desc = connection error: desc = \"transport: Error while dialing dial tcp 127.0.0.1:50051: connectex: No connection could be made because the target machine actively refused it.\""}
+{"level":"ERROR","time":"2021-11-22T20:54:27.779+0800","caller":"api/user.go:51","msg":"invaild param","error":"EOF"}
+{"level":"INFO","time":"2021-11-22T20:54:43.504+0800","caller":"api/user.go:86","msg":"用户列表查询"}
+{"level":"ERROR","time":"2021-11-22T20:54:45.561+0800","caller":"api/user.go:89","msg":"用户列表获取失败：","error":"rpc error: code = Unavailable desc = connection error: desc = \"transport: Error while dialing dial tcp 127.0.0.1:50051: connectex: No connection could be made because the target machine actively refused it.\""}
+{"level":"INFO","time":"2021-11-22T21:05:31.243+0800","caller":"api/user.go:86","msg":"用户列表查询"}
+{"level":"ERROR","time":"2021-11-22T21:05:33.271+0800","caller":"api/user.go:89","msg":"用户列表获取失败：","error":"rpc error: code = Unavailable desc = connection error: desc = \"transport: Error while dialing dial tcp 127.0.0.1:50051: connectex: No connection could be made because the target machine actively refused it.\""}
+{"level":"INFO","time":"2021-11-22T21:10:06.137+0800","caller":"api/user.go:86","msg":"用户列表查询"}
+{"level":"INFO","time":"2021-11-22T21:13:53.937+0800","caller":"api/user.go:86","msg":"用户列表查询"}
+{"level":"INFO","time":"2021-11-22T21:18:46.671+0800","caller":"api/user.go:86","msg":"用户列表查询"}
+{"level":"ERROR","time":"2021-11-22T21:19:13.154+0800","caller":"api/user.go:51","msg":"invaild param","error":"EOF"}
+{"level":"INFO","time":"2021-11-22T21:31:38.346+0800","caller":"api/user.go:86","msg":"用户列表查询"}
+{"level":"INFO","time":"2021-11-22T21:45:08.485+0800","caller":"api/user.go:86","msg":"用户列表查询"}
