@@ -3,11 +3,27 @@ package initialize
 import (
 	"fmt"
 	consulapi "github.com/hashicorp/consul/api"
+	_ "github.com/mbobakov/grpc-consul-resolver"
 	"go.uber.org/zap"
 	"google.golang.org/grpc"
 	"mxshop-api/user-web/global"
 	"mxshop-api/user-web/proto"
 )
+
+// InitSrvConn 负载均衡
+func InitSrvConn() {
+	consulConfig := global.Conf.ConsulConfig
+	dial, err := grpc.Dial(fmt.Sprintf("%s:%d/%s?wait=14s",
+		consulConfig.Host, consulConfig.Port, consulConfig.Name),
+		grpc.WithInsecure(),
+		grpc.WithDefaultServiceConfig(`{"loadBalancingPolicy": "round_robin"}`))
+	if err != nil {
+		zap.L().Error("用户服务连接失败：", zap.Error(err))
+		return
+	}
+	client := proto.NewUserClient(dial)
+	global.Client = client
+}
 
 func InitProtoClient() {
 	// 从注册中心获取用户信息
@@ -32,7 +48,9 @@ func InitProtoClient() {
 		userSrvPort = value.Port
 		break
 	}
-	dial, err := grpc.Dial(fmt.Sprintf("%s:%d", userSrvHost, userSrvPort), grpc.WithInsecure())
+
+	dial, err := grpc.Dial(fmt.Sprintf("%s:%d/mxshop?wait=14s&tag=hq", userSrvHost, userSrvPort), grpc.WithInsecure(),
+		grpc.WithDefaultServiceConfig(`{"loadBalancingPolicy": "round_robin"}`))
 	if err != nil {
 		zap.L().Error("grpc连接失败", zap.Error(err))
 		return
