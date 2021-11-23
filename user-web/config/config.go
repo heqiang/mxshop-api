@@ -57,3 +57,13 @@ type ConsulConfig struct {
 	Port int    `mapstructure:"port"`
 	Name string `mapstructure:"name"`
 }
+
+type NaconsConfig struct {
+	Host      string `mapstructure:"host"`
+	Port      int    `mapstructure:"port"`
+	NameSpace string `mapstructure:"namespace"`
+	User      string `mapstructure:"user"`
+	Password  string `mapstructure:"password"`
+	DataId    string `mapstructure:"dataid"`
+	Group     string `mapstructure:"group"`
+}

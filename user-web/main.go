@@ -15,7 +15,6 @@ import (
 
 func main() {
 	initialize.InitConfig()
-	fmt.Println(global.Conf)
 	initialize.InitSrvConn()
 
 	err := initialize.InitLogger(global.Conf.LogConfig)

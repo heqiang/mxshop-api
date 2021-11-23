@@ -6,6 +6,7 @@ import (
 )
 
 var (
-	Client proto.UserClient
-	Conf   *config.WebConfig
+	Client      proto.UserClient
+	Conf        *config.WebConfig
+	NacosConfig *config.NaconsConfig
 )

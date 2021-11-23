@@ -27,3 +27,4 @@
 {"level":"ERROR","time":"2021-11-22T21:19:13.154+0800","caller":"api/user.go:51","msg":"invaild param","error":"EOF"}
 {"level":"INFO","time":"2021-11-22T21:31:38.346+0800","caller":"api/user.go:86","msg":"用户列表查询"}
 {"level":"INFO","time":"2021-11-22T21:45:08.485+0800","caller":"api/user.go:86","msg":"用户列表查询"}
+{"level":"INFO","time":"2021-11-23T21:23:26.806+0800","caller":"api/user.go:86","msg":"用户列表查询"}
