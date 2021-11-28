@@ -58,14 +58,7 @@ grpc服务
 >
 > protoc --go_out=plugins=grpc:. *.proto
 
-数据库服务
-
-> ```console
-> docker run --name some-mysql -e MYSQL_ROOT_PASSWORD=123456 -p 3306:3306 -d mysql:8.0
-> docker run --name some-redis -p 6379:6379 -d redis
-> ```
-
-服务发现与注册
+consul服务发现
 
 > docker run -d --name=dev-consul  -p 8500:8500  -e CONSUL_BIND_INTERFACE=eth0 consul
 
